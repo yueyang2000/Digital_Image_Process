@@ -2,7 +2,7 @@ from PIL import Image
 import numpy as np 
 from scipy.fft import dctn, idctn
 import argparse
-from matrices import MATRACES
+from matrices import MATRICES
 
 def save_img(img, filename):
     Image.fromarray(img.astype(np.uint8), mode='L').save(filename)
@@ -23,7 +23,7 @@ if __name__ == '__main__':
     parser.add_argument('--matrix', '-m', type=str, default='jpeg', help='nikon/canon/jpeg')
     args = parser.parse_args()
 
-    matrix = MATRACES[args.matrix] * args.a
+    matrix = MATRICES[args.matrix] * args.a
     print('Matrix Type:', args.matrix)
     print('a =', args.a)
 

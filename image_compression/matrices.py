@@ -39,7 +39,7 @@ JPEG = np.asarray(
     ]
 )
 
-MATRACES = {
+MATRICES = {
     'cannon': CANON,
     'nikon': NIKON,
     'jpeg': JPEG
