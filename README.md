@@ -19,3 +19,6 @@ Labs of *Digital Image Processing (THU 2021)*
 - Face morphing
   - Delaunay Triangulation + cross dissolve
 
+- Image compression
+  - compress image with 1D-DCT and 2D-DCT
+  - Quantization with different matrices (Canon / Nikon / JPEG-standard)
